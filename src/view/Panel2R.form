@@ -43,12 +43,12 @@
                                   <Component id="textRepartidorFZona" min="-2" pref="117" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="btnSgteRepartidoF" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnCrearRepartidor" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="btnCargar" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnCargarR" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="btnGuardar" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnGuardarR" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="138" max="-2" attributes="0"/>
@@ -80,9 +80,9 @@
               </Group>
               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnCargar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnGuardar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnSgteRepartidoF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCargarR" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnGuardarR" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCrearRepartidor" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="12" max="32767" attributes="0"/>
               <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
@@ -132,17 +132,17 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textRepartidorFZonaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnSgteRepartidoF">
+    <Component class="javax.swing.JButton" name="btnCrearRepartidor">
       <Properties>
         <Property name="text" type="java.lang.String" value="CREAR"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnCargar">
+    <Component class="javax.swing.JButton" name="btnCargarR">
       <Properties>
         <Property name="text" type="java.lang.String" value="CARGAR"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="btnGuardar">
+    <Component class="javax.swing.JButton" name="btnGuardarR">
       <Properties>
         <Property name="text" type="java.lang.String" value="GUARDAR"/>
       </Properties>
@@ -158,11 +158,38 @@
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="4" rowCount="4">
-                <Column editable="true" title="Title 1" type="java.lang.Object"/>
-                <Column editable="true" title="Title 2" type="java.lang.Object"/>
-                <Column editable="true" title="Title 3" type="java.lang.Object"/>
-                <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                <Column editable="true" title="Nombre" type="java.lang.Object"/>
+                <Column editable="true" title="Edad" type="java.lang.Object"/>
+                <Column editable="true" title="Salario" type="java.lang.Object"/>
+                <Column editable="true" title="Zona" type="java.lang.Object"/>
               </Table>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
             </Property>
           </Properties>
         </Component>

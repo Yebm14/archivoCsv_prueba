@@ -35,9 +35,9 @@ public class Panel2R extends javax.swing.JPanel {
         textRepartidorFEdad = new javax.swing.JTextField();
         textRepartidorFSalario = new javax.swing.JTextField();
         textRepartidorFZona = new javax.swing.JTextField();
-        btnSgteRepartidoF = new javax.swing.JButton();
-        btnCargar = new javax.swing.JButton();
-        btnGuardar = new javax.swing.JButton();
+        btnCrearRepartidor = new javax.swing.JButton();
+        btnCargarR = new javax.swing.JButton();
+        btnGuardarR = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaRepartidor = new javax.swing.JTable();
 
@@ -69,11 +69,11 @@ public class Panel2R extends javax.swing.JPanel {
             }
         });
 
-        btnSgteRepartidoF.setText("CREAR");
+        btnCrearRepartidor.setText("CREAR");
 
-        btnCargar.setText("CARGAR");
+        btnCargarR.setText("CARGAR");
 
-        btnGuardar.setText("GUARDAR");
+        btnGuardarR.setText("GUARDAR");
 
         tablaRepartidor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -83,7 +83,7 @@ public class Panel2R extends javax.swing.JPanel {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Nombre", "Edad", "Salario", "Zona"
             }
         ));
         jScrollPane1.setViewportView(tablaRepartidor);
@@ -114,11 +114,11 @@ public class Panel2R extends javax.swing.JPanel {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(textRepartidorFSalario)
                                     .addComponent(textRepartidorFZona, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(btnSgteRepartidoF, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addComponent(btnCrearRepartidor, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnCargar)
+                        .addComponent(btnCargarR)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnGuardar)))
+                        .addComponent(btnGuardarR)))
                 .addGap(138, 138, 138))
         );
         layout.setVerticalGroup(
@@ -142,9 +142,9 @@ public class Panel2R extends javax.swing.JPanel {
                     .addComponent(textRepartidorFZona, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCargar)
-                    .addComponent(btnGuardar)
-                    .addComponent(btnSgteRepartidoF))
+                    .addComponent(btnCargarR)
+                    .addComponent(btnGuardarR)
+                    .addComponent(btnCrearRepartidor))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(86, 86, 86))
@@ -165,9 +165,9 @@ public class Panel2R extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCargar;
-    private javax.swing.JButton btnGuardar;
-    private javax.swing.JButton btnSgteRepartidoF;
+    private javax.swing.JButton btnCargarR;
+    private javax.swing.JButton btnCrearRepartidor;
+    private javax.swing.JButton btnGuardarR;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

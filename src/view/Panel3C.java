@@ -35,7 +35,7 @@ public class Panel3C extends javax.swing.JPanel {
         textComerciaSalario = new javax.swing.JTextField();
         textComision = new javax.swing.JLabel();
         textComerciaFComision = new javax.swing.JTextField();
-        btnSgteComerciaF = new javax.swing.JButton();
+        btnCrearComercial = new javax.swing.JButton();
         btnCargarC = new javax.swing.JButton();
         btnGuardarC = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -69,10 +69,10 @@ public class Panel3C extends javax.swing.JPanel {
             }
         });
 
-        btnSgteComerciaF.setText("CREAR");
-        btnSgteComerciaF.addActionListener(new java.awt.event.ActionListener() {
+        btnCrearComercial.setText("CREAR");
+        btnCrearComercial.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSgteComerciaFActionPerformed(evt);
+                btnCrearComercialActionPerformed(evt);
             }
         });
 
@@ -88,7 +88,7 @@ public class Panel3C extends javax.swing.JPanel {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Nombre", "Edad", "Salario", "Comisión"
             }
         ));
         jScrollPane1.setViewportView(tablaComercial);
@@ -115,7 +115,7 @@ public class Panel3C extends javax.swing.JPanel {
                                 .addComponent(textComercialFEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(btnSgteComerciaF)
+                                    .addComponent(btnCrearComercial)
                                     .addComponent(textComerciaFComision, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(btnCargarC)
@@ -145,7 +145,7 @@ public class Panel3C extends javax.swing.JPanel {
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnCargarC)
-                    .addComponent(btnSgteComerciaF)
+                    .addComponent(btnCrearComercial)
                     .addComponent(btnGuardarC))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -165,15 +165,15 @@ public class Panel3C extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_textComerciaFComisionActionPerformed
 
-    private void btnSgteComerciaFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSgteComerciaFActionPerformed
+    private void btnCrearComercialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearComercialActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSgteComerciaFActionPerformed
+    }//GEN-LAST:event_btnCrearComercialActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCargarC;
+    private javax.swing.JButton btnCrearComercial;
     private javax.swing.JButton btnGuardarC;
-    private javax.swing.JButton btnSgteComerciaF;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaComercial;
     private javax.swing.JTextField textComerciaFComision;
