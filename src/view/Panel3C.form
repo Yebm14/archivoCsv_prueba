@@ -17,18 +17,10 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="376" max="32767" attributes="0"/>
-              <Component id="btnSgteComerciaF" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="261" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="216" max="-2" attributes="0"/>
-                      <Component id="tituloComercial" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
+              <EmptySpace pref="240" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="textNombreC" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="textEdadC" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -37,25 +29,32 @@
                       </Group>
                       <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="textComerciaFComision" min="-2" pref="117" max="-2" attributes="0"/>
                           <Component id="textComerciaSalario" min="-2" pref="117" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="textComercialFNombre" alignment="0" pref="118" max="32767" attributes="0"/>
-                              <Component id="textComercialFEdad" alignment="0" max="32767" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="textComercialFNombre" alignment="0" max="32767" attributes="0"/>
+                              <Component id="textComercialFEdad" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="btnSgteComerciaF" min="-2" max="-2" attributes="0"/>
+                                  <Component id="textComerciaFComision" min="-2" pref="117" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="btnCargarC" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="btnGuardarC" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="154" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-              <Component id="tituloComercial" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="textNombreC" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="textComercialFNombre" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -70,24 +69,25 @@
                   <Component id="textSalarioC" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="textComerciaSalario" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-              <Component id="btnSgteComerciaF" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="textComision" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="textComerciaFComision" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="279" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnCargarC" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnSgteComerciaF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnGuardarC" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="98" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="tituloComercial">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="COMERCIAL"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JLabel" name="textNombreC">
       <Properties>
         <Property name="text" type="java.lang.String" value="NOMBRE"/>
@@ -130,11 +130,42 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnSgteComerciaF">
       <Properties>
-        <Property name="text" type="java.lang.String" value="SIGUIENTE"/>
+        <Property name="text" type="java.lang.String" value="CREAR"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSgteComerciaFActionPerformed"/>
       </Events>
     </Component>
+    <Component class="javax.swing.JButton" name="btnCargarC">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CARGAR"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnGuardarC">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="GUARDAR"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="tablaComercial">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="4" rowCount="4">
+                <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                <Column editable="true" title="Title 4" type="java.lang.Object"/>
+              </Table>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>

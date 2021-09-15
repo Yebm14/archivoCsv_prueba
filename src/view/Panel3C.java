@@ -27,7 +27,6 @@ public class Panel3C extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        tituloComercial = new javax.swing.JLabel();
         textNombreC = new javax.swing.JLabel();
         textComercialFNombre = new javax.swing.JTextField();
         textEdadC = new javax.swing.JLabel();
@@ -37,8 +36,10 @@ public class Panel3C extends javax.swing.JPanel {
         textComision = new javax.swing.JLabel();
         textComerciaFComision = new javax.swing.JTextField();
         btnSgteComerciaF = new javax.swing.JButton();
-
-        tituloComercial.setText("COMERCIAL");
+        btnCargarC = new javax.swing.JButton();
+        btnGuardarC = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tablaComercial = new javax.swing.JTable();
 
         textNombreC.setText("NOMBRE");
 
@@ -68,28 +69,39 @@ public class Panel3C extends javax.swing.JPanel {
             }
         });
 
-        btnSgteComerciaF.setText("SIGUIENTE");
+        btnSgteComerciaF.setText("CREAR");
         btnSgteComerciaF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSgteComerciaFActionPerformed(evt);
             }
         });
 
+        btnCargarC.setText("CARGAR");
+
+        btnGuardarC.setText("GUARDAR");
+
+        tablaComercial.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(tablaComercial);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(376, Short.MAX_VALUE)
-                .addComponent(btnSgteComerciaF)
-                .addGap(261, 261, 261))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addContainerGap(240, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(216, 216, 216)
-                        .addComponent(tituloComercial))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(97, 97, 97)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(textNombreC)
                             .addComponent(textEdadC)
@@ -97,19 +109,24 @@ public class Panel3C extends javax.swing.JPanel {
                             .addComponent(textComision))
                         .addGap(44, 44, 44)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(textComerciaFComision, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(textComerciaSalario, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(textComercialFNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
-                                .addComponent(textComercialFEdad)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(textComercialFNombre)
+                                .addComponent(textComercialFEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(btnSgteComerciaF)
+                                    .addComponent(textComerciaFComision, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnCargarC)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnGuardarC)))))
+                .addGap(154, 154, 154))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(tituloComercial)
-                .addGap(51, 51, 51)
+                .addGap(71, 71, 71)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(textNombreC)
                     .addComponent(textComercialFNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -121,13 +138,18 @@ public class Panel3C extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(textSalarioC)
                     .addComponent(textComerciaSalario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(12, 12, 12)
-                .addComponent(btnSgteComerciaF)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(textComision)
                     .addComponent(textComerciaFComision, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(279, Short.MAX_VALUE))
+                .addGap(36, 36, 36)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnCargarC)
+                    .addComponent(btnSgteComerciaF)
+                    .addComponent(btnGuardarC))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(98, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -149,7 +171,11 @@ public class Panel3C extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCargarC;
+    private javax.swing.JButton btnGuardarC;
     private javax.swing.JButton btnSgteComerciaF;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable tablaComercial;
     private javax.swing.JTextField textComerciaFComision;
     private javax.swing.JTextField textComerciaSalario;
     private javax.swing.JTextField textComercialFEdad;
@@ -158,7 +184,6 @@ public class Panel3C extends javax.swing.JPanel {
     private javax.swing.JLabel textEdadC;
     private javax.swing.JLabel textNombreC;
     private javax.swing.JLabel textSalarioC;
-    private javax.swing.JLabel tituloComercial;
     // End of variables declaration//GEN-END:variables
 }
 

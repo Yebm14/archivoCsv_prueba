@@ -57,7 +57,7 @@ public class Principal extends javax.swing.JFrame {
         );
         PanelPrincipalLayout.setVerticalGroup(
             PanelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 846, Short.MAX_VALUE)
+            .addGap(0, 857, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -69,7 +69,7 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(btnComercial)
                 .addGap(98, 98, 98)
                 .addComponent(btnRepartidor)
-                .addContainerGap(401, Short.MAX_VALUE))
+                .addContainerGap(416, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(PanelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -92,7 +92,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void btnRepartidorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRepartidorActionPerformed
         Panel2R repartidorP = new Panel2R();
-        repartidorP.setSize(500, 500);
+        repartidorP.setSize(700, 700);
         repartidorP.setLocation(5, 5);
 
         PanelPrincipal.removeAll();
@@ -103,7 +103,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void btnComercialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComercialActionPerformed
         Panel3C comercialP = new Panel3C();
-        comercialP.setSize(500, 500);
+        comercialP.setSize(700, 700);
         comercialP.setLocation(5, 5);
 
         PanelPrincipal.removeAll();
